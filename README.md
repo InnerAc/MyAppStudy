@@ -8,21 +8,19 @@ My android study
 ActivityTestDemo
 
 测试了Aactivity的生命周期(LifeActivity)
+
 测试了android:theme样例(Theme.Translucent.NoTitleBar)
+
 	android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+
 测试了数据传输在下一个Activity中显示文本框中的内容（DataActivity）
 ==========
 theme样例：
 	android:theme="@android:style/Theme.Dialog" : Activity显示为对话框模式
-	
 	android:theme="@android:style/Theme.NoTitleBar" : 不显示应用程序标题栏
-	
 	android:theme="@android:style/Theme.NoTitleBar.Fullscreen" : 不显示应用程序标题栏，并全屏
-	
 	android:theme="Theme.Light ": 背景为白色
-	
 	android:theme="Theme.Light.NoTitleBar" : 白色背景并无标题栏
-	
 	android:theme="Theme.Light.NoTitleBar.Fullscreen" : 白色背景，无标题栏，全屏
 	android:theme="Theme.Black" : 背景黑色
 	android:theme="Theme.Black.NoTitleBar" : 黑色背景并无标题栏
