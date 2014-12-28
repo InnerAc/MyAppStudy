@@ -1,26 +1,24 @@
-package com.example.innerac.activity_test;
+package com.example.innerac.activitytestdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class activity_life extends Activity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("This activity start");
-        setContentView(R.layout.activity_activity_life);
+        setContentView(R.layout.activity_main);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_activity_life, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -38,26 +36,4 @@ public class activity_life extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    protected void onStart(){
-        super.onStart();
-        Log.i("log","onStart");
-    }
-    protected void onResume(){
-        super.onResume();
-        Log.i("log","onResume");
-    }
-    protected void onPause(){
-        super.onPause();
-        Log.i("log","onPause");
-    }
-    protected void onStop(){
-        super.onStop();
-        Log.i("log","onStop");
-    }
-    protected void onDestroy(){
-        super.onDestroy();
-        Log.i("log","onDestroy");
-    }
-
 }

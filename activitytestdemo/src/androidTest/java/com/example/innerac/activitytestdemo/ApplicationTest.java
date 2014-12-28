@@ -1,4 +1,4 @@
-package com.example.innerac.activity_test;
+package com.example.innerac.activitytestdemo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

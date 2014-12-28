@@ -1,24 +1,47 @@
-package com.example.innerac.activity_test;
+package com.example.innerac.activitytestdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity {
+public class LifeActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        Log.i("LifeCycle","onCreate");
+        setContentView(R.layout.activity_life);
     }
 
+    protected void onStart(){
+        super.onStart();
+        Log.i("LifeCycle","onStart");
+    }
+
+    protected  void onResume(){
+        super.onResume();
+        Log.i("LifeCycle","onResume");
+    }
+    protected  void onStop(){
+        super.onStop();
+        Log.i("LifeCycle","onStop");
+    }
+    protected  void onDestroy(){
+        Log.i("LifeCycle","onDestory");
+        super.onDestroy();
+    }
+    protected void onRestart(){
+        Log.i("LifeCycle","onRestart");
+        super.onRestart();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_life, menu);
         return true;
     }
 
