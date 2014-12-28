@@ -20,8 +20,24 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_life"
         android:id="@+id/btn_life"
-        android:layout_marginTop="134dp"
-        android:layout_below="@+id/btn_theme"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deliverData"
+        android:id="@+id/btn_data"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_life"
+        android:layout_marginBottom="59dp" />
+
+    <EditText
+        android:hint="将会在下一个Activity中显示文本框内容"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_data"
+        android:layout_above="@+id/btn_data"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

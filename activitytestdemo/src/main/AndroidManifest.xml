@@ -19,7 +19,7 @@
         <activity
             android:name=".ThemeActivity"
             android:label="@string/title_activity_theme"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,6 +34,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DataActivity"
+            android:label="@string/title_activity_data" >
         </activity>
     </application>
 

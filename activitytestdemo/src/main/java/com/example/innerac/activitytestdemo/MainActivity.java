@@ -7,11 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 
 public class MainActivity extends Activity {
 
-    private Button btn_theme,btn_life;
+    private Button btn_theme,btn_life,btn_data;
+    private EditText edittext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +25,12 @@ public class MainActivity extends Activity {
     protected void init(){
         btn_theme = (Button)findViewById(R.id.btn_theme);
         btn_life = (Button)findViewById(R.id.btn_life);
+        btn_data = (Button)findViewById(R.id.btn_data);
+        edittext = (EditText)findViewById(R.id.edit_data);
 
         btn_life.setOnClickListener(listen);
         btn_theme.setOnClickListener(listen);
+        btn_data.setOnClickListener(datelisten);
     }
 
     View.OnClickListener listen = new View.OnClickListener() {
@@ -39,6 +44,15 @@ public class MainActivity extends Activity {
             }else{
                 intent = new Intent(MainActivity.this,LifeActivity.class);
             }
+            startActivity(intent);
+        }
+    };
+    View.OnClickListener datelisten = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this,DataActivity.class);
+            String data = edittext.getText().toString();
+            intent.putExtra("Data_name",data);
             startActivity(intent);
         }
     };
